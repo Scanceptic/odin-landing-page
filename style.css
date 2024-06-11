@@ -9,6 +9,32 @@
 body {
     font-family: 'Roboto', sans-serif;
     display: flex;
+    flex-direction: column;
     min-height: 100vh;
-    background-color: #F3F7EC;
+    background-color: #E88D67;
+    align-items: center;
+    color: #F3F7EC;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.col {
+    background-color: #006989;
+    border: 2px solid black;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+h2 {
+    background-color: #005C78;
+    border: 2px solid black;
+    font-size: 26px;
+    font-weight: 700;
 }
