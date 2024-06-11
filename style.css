@@ -1,0 +1,14 @@
+/*
+    Colour Palette:
+    Orange #E88D67
+    White #F3F7EC
+    Blue #006989
+    Navy #005C78
+*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    background-color: #F3F7EC;
+}
