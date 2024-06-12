@@ -14,11 +14,52 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
 
-.hero, .footer {
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+.hero, .footer, a {
     background-color: #1F2937;
+    color: #F9FAF8;
+}
+
+.header .logo {
+    font-size: 24px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 .hero .main {
@@ -31,29 +72,54 @@ body {
     font-size: 18px;
     color: #E5E7EB;
 }
-
-.header .logo {
-    font-size: 24px;
-    color: #F9FAF8;
-}
-
-.button, .call {
-    background-color: #3882F6;
-}
-
-.header .info {
+/*
+h2 {
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #3882F6;
+    border-radius: 5px;
+}
+
 .quote {
     background-color: #E5E7EB;
     font-size: 36px;
-    font-weight: lighter;
     font-style: italic;
+    font-weight: 300;
     color: #1F2937;
 }
+
+.quote-author {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bolder;
+    text-align: right;
+}
+
+button, .call-to-action {
+    background-color: #3882F6;
+    padding: 5px 20px;
+    color: #F9FAF8;
+    border-radius: 5px;
+}
+*/
+
+
 
 /*
     ul {
@@ -65,7 +131,6 @@ body {
     a {
         text-decoration: none;
     }
-
     .footer a:hover {
         text-decoration: underline;
     }
