@@ -8,50 +8,82 @@
     Information header text: 36px extra-bold #1F2937
     Quote section background color: #E5E7EB
     Quote text: 36px light italic #1F2937
-*/
+*/    
+   
+/* Body styling */
 
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
 }
+
+/* Row and Column flex styling */
 
 .row {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
 }
 
-.col {
+.column {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-.footer {
-    margin-top: auto;
-}
+/* Colours and Font Styling */
 
-.hero, .footer, a {
+.hero, .footer {
     background-color: #1F2937;
     color: #F9FAF8;
 }
 
-.header .logo {
-    font-size: 24px;
+.hero-main-text {
+    font-size: 48px;
+    font-weight: 700;
+    color: #F9FAF8;
 }
 
+.hero-secondary-text, .header-link-text {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.header-logo-text {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+button, .call-to-action {
+    background-color: #3882F6;
+}
+
+.information-header {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1F2937;
+}
+
+.quote-section {
+    background-color: #E5E7EB
+}
+
+.quote-text {
+    font-size: 36px;
+    font-weight: 300;
+    color: #1F2937;
+}
+
+/* Header styling */
+
 .header {
-    display: flex;
     justify-content: space-between;
+    padding-top: 10px;
 }
 
 .header-links {
     display: flex;
     justify-content: space-between;
-    gap: 15px;
+    gap: 25px;
 }
 
 ul {
@@ -62,21 +94,42 @@ a {
     text-decoration: none;
 }
 
-.hero .main {
-    font-size: 48px;
-    font-weight: bolder;
+/* Hero styling */
+
+.hero {
+    background-color: #1F2937;
     color: #F9FAF8;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 10px;
+    padding-bottom: 50px;
 }
 
-.hero .second, a.header {
+.hero-signup {
+    color: #F9FAF8;
+    border-radius: 5px;
+    border: none;
     font-size: 18px;
-    color: #E5E7EB;
+    font-weight: 600;
+    width: 130px;
+    height: 35px;
 }
-/*
-h2 {
-    font-size: 36px;
-    font-weight: bolder;
-    color: #1F2937;
+
+/* Content container styling */
+
+.content {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card section styling */
+
+.card-section {
+    padding: 0 200px;
+    margin: 20px 0;
 }
 
 .card {
@@ -92,9 +145,11 @@ h2 {
 .card img {
     width: 150px;
     height: 150px;
-    border: 2px solid #3882F6;
-    border-radius: 5px;
+    border: 3px solid #3882F6;
+    border-radius: 10px;
 }
+
+/* Quote section styling */
 
 .quote {
     background-color: #E5E7EB;
@@ -102,48 +157,43 @@ h2 {
     font-style: italic;
     font-weight: 300;
     color: #1F2937;
+    padding: 20px 250px;
 }
 
 .quote-author {
     font-size: 24px;
     font-style: normal;
-    font-weight: bolder;
+    font-weight: 700;
     text-align: right;
 }
 
-button, .call-to-action {
-    background-color: #3882F6;
-    padding: 5px 20px;
-    color: #F9FAF8;
-    border-radius: 5px;
+/* Call to action styling */
+
+.call-to-action {
+    padding: 30px 0 30px 100px;
+    border-radius: 15px;
+    margin: 100px 200px;
 }
-*/
 
+.margin-bottom-zero {
+    margin-bottom: 0;
+}
 
+.margin-top-zero {
+    margin-top: 0;
+}
 
-/*
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
+.call-signup {
+    border: 1px solid #F9FAF8;
+    margin: auto;
+    height: 30px;
+    width: 100px;
+}
 
-    a {
-        text-decoration: none;
-    }
-    .footer a:hover {
-        text-decoration: underline;
-    }
+/* Footer styling */
 
-    .slide-link {
-        margin: 0 -0.25rem;
-        padding: 0 0.25rem;
-        box-shadow: inset 0 0 0 0 #54b3d6;
-        transition: box-shadow .3s ease-in-out;
-    }
-
-    .slide-link:hover {
-        box-shadow: inset 300px 0 0 0 #54b3d6;
-        color: white;
-    }
-*/
+.footer {
+    margin-top: auto;
+    padding: 40px;
+    text-align: center;
+}
