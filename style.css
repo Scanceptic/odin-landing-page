@@ -16,7 +16,6 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     min-height: 100vh;
-    align-items: center;
 }
 
 /* Row and Column flex styling */
@@ -42,17 +41,11 @@ body {
     font-size: 48px;
     font-weight: 700;
     color: #F9FAF8;
-    margin-bottom: 0;
 }
 
 .hero-secondary-text, .header-link-text {
     font-size: 18px;
     color: #E5E7EB;
-}
-
-.hero-secondary-text {
-    margin-top: 5px;
-    margin-bottom: 5px;
 }
 
 .header-logo-text {
@@ -85,6 +78,7 @@ button, .call-to-action {
 .header {
     justify-content: space-between;
     padding-top: 10px;
+    padding-bottom: 100px;
 }
 
 .header-links {
@@ -106,8 +100,8 @@ a {
 .hero {
     background-color: #1F2937;
     color: #F9FAF8;
-    width: 100%;
-    padding: 10px 20% 10px 20%;
+    width: 80%;
+    padding: 10px 20% 50px 20%;
 }
 
 .hero-signup {
@@ -138,8 +132,17 @@ a {
 /* Card section styling */
 
 .card-section {
-    padding: 0 200px;
-    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -180,26 +183,23 @@ a {
 /* Call to action styling */
 
 .call-to-action {
-    padding: 30px 0 30px 100px;
-    border-radius: 15px;
-    margin: 100px 200px;
+    border-radius: 5px;
     color: #F9FAF8;
-}
-
-.margin-bottom-zero {
-    margin-bottom: 0;
-}
-
-.margin-top-zero {
-    margin-top: 0;
+    width: 700px;
+    margin: 50px 20%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .call-signup {
-    border: 1px solid #F9FAF8;
+    border: 2px solid #F9FAF8;
     margin: auto;
     height: 30px;
     width: 100px;
     color: #F9FAF8;
+    font-weight: 600;
+    border-radius: 5px;
 }
 
 /* Footer styling */
